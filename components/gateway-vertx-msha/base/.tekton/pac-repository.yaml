@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: coolstore
+    appstudio.openshift.io/component: gateway-vertx-msha
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: gateway-vertx-msha
+  namespace: gnunn-tenant
+spec:
+  url: https://github.com/coolstore-demo/gateway-vertx
