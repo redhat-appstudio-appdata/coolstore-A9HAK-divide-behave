@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xsjp
+  namespace: gnunn-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:221adf3d42839ac374e49033f143239c1f9dd9c57092d4dd7ec226de3c80dede
+        name: my-nodejs
+        resources: {}
+status: {}
