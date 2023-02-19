@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-xsjp
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:A9HAK-devfile-sample-xsjp
+      - image: quay.io/redhat-appstudio/user-workload@sha256:221adf3d42839ac374e49033f143239c1f9dd9c57092d4dd7ec226de3c80dede
         name: my-nodejs
         ports:
         - containerPort: 3001
